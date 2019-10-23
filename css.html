@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="default.css" />
+        <!-- external 외부에서 css 파일을 불러와서 사용하는 것 -->
+
+        <style>
+        #embeded{
+            color: green;
+            font-size: 30px;
+        }
+      
+
+        b{ color:violet;}
+        /* css 주석 */
+
+        </style>
+    </head>
+
+    <body>
+        <div id="external">external 방식</div>
+        <div id="embeded">embeded 방식</div>
+        <div id="inline" style="color:yellow;">inline 방식</div>
+    <b>볼드체</b>
+
+    <style>
+        /* 클래스 선택자*/
+        .c_name{color: green;}
+        /* 아이디 선택자 */
+        #i_name{ color: purple;}
+    </style>
+    <div class="c_name">클래스선택자</div>
+    <div id="i_name">아이디선택자</div>
+
+    <style>
+        /* 가상 요소 선택자 */
+
+        #name_a:before{ content:"시작"; }
+        #name_a:after{ content:"끝";}
+        #name_a:first-letter{ font-size: 300px; }
+        #name_a:first-line{ color: pink;}     </style>
+    <div id="name_a">내ㅐㅐㅐㅐㅐ용ㅇㅇㅇㅇㅇㅇ</div>
+
+
+        <style>
+            /* 가상 클래스 선택자 */
+            .li1:first-child{ color: red;}
+            .li1:last-child{ color: blue;}
+            .li1:nth-child(2){ color: green;}
+
+            a:link{ color: black; text-decoration: none; }
+            a:visited{color:red;}
+            a:hover{ color: blue; font-size: 30px;}
+            a:active{ color: yellow;}
+            a:focus{ color: green;}
+        </style>
+        <ul>
+            <li class="li1">리스트1</li>
+            <li class="li1">리스트2</li>
+            <li class="li1">리스트3</li>
+
+
+        </ul>
+        <a href="#">링크버튼</a>
+
+
+
+    <style>
+        /* 하위 선택자*/
+        div li{ color : red;}
+        div>ul>li{ text-decoration:underline;}
+        div{color:red;}
+        #i_1,#i_2,#i_3{ color : purple;}
+    </style>
+    <div>
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ul>
+    </div>
+    <div id="i_1">첫번째</div>
+    <div id="i_2">두번째</div>
+    <div id="i_3">세번째</div>
+    <style type="text/css">
+        .cascade {color:green;}
+        #specifi {color:blue;}
+    </style>
+    <div class="cascade"> 단계적으로 적용되는 스타일 </div>
+    <div class="cascade" id="specifi"> 단계적으로 적용되는 스타일 </div>
+    <div class="cascade" id="specifi" style="color:red;"> 단계적으로 적용되는 스타일 </div>
+
+<style>
+    #box_model,#inline_model{
+    border:solid 1px black;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 100px;
+    position: fixed; /* static 정적인, relative 관계형, absolute 절대적, fixed 고정형*/
+    left: 10px;
+    top: 10px; }
+
+    </style>
+    <div id="box_model">박스모델</div>
+    <span id="inline_model">인라인모델</span>
+    <br>
+    <br>
+
+    <style>
+        #font_target{
+            font-family: "210 수필명조OTF 040", Dotum, "굴림", Gulim, fantasy;
+            font-size: 50px;
+            font-weight: bolder;
+           
+            font-variant: small-caps;
+            text-align: center;
+            width: 150px;
+        
+        }
+    </style>
+    폰트 교체하기
+    <div id="font_target">폰트 교체하기 AaBBBbbbDDSDAsdasd</div>
+
+
+    <style>
+        #text_target{
+            text-align: center;
+            text-decoration: line-through;
+
+        }
+        #line-target{
+            letter-spacing: 20px;
+            line-height:  20px;
+            text-indent: 20px;
+            white-space: pre;
+            text-align: left;
+        }
+         </style>
+
+    <div id="text_target"> 글 정렬방식</div>
+
+    <div id="line-target">
+내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
+내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
+내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
+    </div>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+        #google_font{ 
+            font-family: 'Vibes', cursive;
+
+            }
+        </style>
+    <div id="google_font">google font 구글폰트</div>
+
+
+</body>
+</html>
+
+
+
+
+
+

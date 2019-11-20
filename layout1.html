@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <HTML>
+    
     <head>
+        
         <title>layout1</title>
         <meta charset="utf-8"/>
         <style>
-            header, div, nav, footer, ul, li, h1, h2, h3{
-                /*border: solid 1px black;
-                margin: 10px;*/
+            #main-nav{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px gray;
+            text-align: center;
             }
+            #main-nav>a:nth-child(9){
+            border:none;
+        }
+        a:hover{
+            font-weight: bold;
+            color:crimson;
+        }
+
+            
+            /*header, div, nav, footer, ul, li, h1, h2, h3{
+                border: solid 1px black;
+                margin: 10px;
+            }*/
             header{
                 padding: 10px 50px;
             }
@@ -131,6 +149,17 @@
         </style>
     </head>
     <body>
+            <div id="main-nav">
+                    <a href="index.html">◀ index</a>
+                    <a href="training.html">html 연습 페이지</a>
+                    <a href="html5.html">html5 연습 페이지</a>
+                    <a href="form.html">멈뭄미 회원가입</a>
+                    <a href="layout1.html">layout1</a>
+                    <a href="layout2.html">layout2</a>
+                    <a href="layout3.html">layout3</a>
+                    <a href="middle_test_report.html">middle - The Handmaiden</a>
+                    <a href="final_test_report.html">final - Kellogg</a>
+                </div>
         <div id="wrap">
             <header>
                 <h1 class="float_left">

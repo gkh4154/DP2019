@@ -2,11 +2,20 @@
 <html>
     <head>
         <title>html5</title>
-      
         <meta charset="utf-8">
+        <div id="main-nav">
+            <a href="index.html">◀ index</a>
+            <a href="training.html">html 연습 페이지</a>
+            <a href="html5.html">html5 연습 페이지</a>
+            <a href="form.html">멈뭄미 회원가입</a>
+            <a href="layout1.html">layout1</a>
+            <a href="layout2.html">layout2</a>
+            <a href="layout3.html">layout3</a>
+            <a href="middle_test_report.html">middle - The Handmaiden</a>
+            <a href="final_test_report.html">final - Kellogg</a>
+        </div>
     </head>
     <body>
-            <A href="index.html"> index로 돌아가기</A>
         <header>
           <!--머릿말-->  
         </header>
@@ -27,14 +36,51 @@
 
 
         <style>
-                #myCanvas{
-                    width: 300px;
-                    height: 150px;}
-                    
-                    </style>
-                    <canvas id="myCanvas">
-
-                    </canvas>
+            #main-nav{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px black;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            }
+            #main-nav>a:nth-child(9){
+            border:none;
+            }
+            a:hover{
+            font-weight: bold;
+            color:crimson;
+            }
+            #main-nav>a{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px gray;
+            }
+            #myCanvas{
+                width: 300px;
+                
+            }
+            #footer_main{
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-weight:normal;
+            background-color: rgb(197, 4, 4);
+            width:100%;
+            position: absolute;
+            bottom:0;
+            padding:0px 0px;
+            }
+            body{
+                margin:0px;
+            }
+            
+                </style>
+                <canvas id="myCanvas">
+                
+            </canvas>
 
         <script>
         var canvas = document.getElementById("myCanvas");
@@ -73,5 +119,10 @@ ctx.stroke();
         <video width="320px" height="240px" controls>
             <source src="./media/movie.mp4" type="video/mp4">
 
-        </video>    </body>
+        </video>    
+    </body>
+    <footer id="footer_main">
+            <div>Copyright ⓒ rain___young. sources by Kellogg.</div>
+            <div>Kaywon University of Art & Design. Department of Digital Media Design ONTENT PROGRAMMING FINAL TEST REPORT</div>
+        </footer>
 </html>

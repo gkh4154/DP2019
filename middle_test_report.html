@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <div id="main-nav">
+                <a href="index.html">◀ index</a>
+                <a href="training.html">html 연습 페이지</a>
+                <a href="html5.html">html5 연습 페이지</a>
+                <a href="form.html">멈뭄미 회원가입</a>
+                <a href="layout1.html">layout1</a>
+                <a href="layout2.html">layout2</a>
+                <a href="layout3.html">layout3</a>
+                <a href="middle_test_report.html">middle - The Handmaiden</a>
+                <a href="final_test_report.html">final - Kellogg</a>
+        </div>
         <DIV style="text-align :center;">
-            <a href="index.html">◀ index</a>
-            <a href="final_test_report.html">final▶</a>
-            
-
         <br/>
         <br/>
         <br/>
@@ -25,7 +32,29 @@
 
         <meta charset="UTF-8" />
         <style>
-            
+            #main-nav{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px black;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+
+            }
+            #main-nav>a:nth-child(11){
+            border:none;
+            }
+            a:hover{
+            font-weight: bold;
+            color:crimson;
+            }
+            #main-nav>a{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px gray;
+            }
             #sound1{
             color: rgb(172, 69, 44);
             font-size : 15px;
@@ -57,10 +86,22 @@
             font-size:30px;
             font-family: "210 수필명조OTF 040";
             letter-spacing:px;
-            
+            }
+            #footer_main{
+                text-align: center;
+                color: white;
+                font-size: 12px;
+                font-weight:normal;
+                background-color: rgb(197, 4, 4);
+                width:100%;
+                bottom:0;
+                padding:0px 0px;
+            }
+            body{
+                margin:0px;
             }
             
-            
+           
           
         </style>
         <!--톱메뉴스타일-->
@@ -153,6 +194,7 @@
                         #name3{ color: rgb(62, 150, 66)}
                         #name4{ color: rgb(168, 58, 172)}
                         #name5{ color: rgb(131, 0, 0)}
+                       
                 </style>
                 <!--영화 시작-->
                 <hr/>
@@ -516,11 +558,10 @@
             <br />
             <br />
             <br />
-        </div>
-
-   
-
-   
-        
+        </div>        
     </body>
+    <footer id="footer_main">
+            <div>Copyright ⓒ rain___young. sources by Kellogg.</div>
+            <div>Kaywon University of Art & Design. Department of Digital Media Design ONTENT PROGRAMMING FINAL TEST REPORT</div>
+        </footer>
 </html>

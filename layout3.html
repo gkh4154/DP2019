@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <A href="index.html">◀ index</A>
     <head>
-        
         <title>layout3</title>
         <meta charset="utf-8" />
+        <div id="main-nav">
+            <a href="index.html">◀ index</a>
+            <a href="training.html">html 연습 페이지</a>
+            <a href="html5.html">html5 연습 페이지</a>
+            <a href="form.html">멈뭄미 회원가입</a>
+            <a href="layout1.html">layout1</a>
+            <a href="layout2.html">layout2</a>
+            <a href="layout3.html">layout3</a>
+            <a href="middle_test_report.html">middle - The Handmaiden</a>
+            <a href="final_test_report.html">final - Kellogg</a>
+        </div>
         <style>
+            body{
+                margin:0px;
+            }
+            #main-nav{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px black;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+
+            }
+            #main-nav>a:nth-child(9){
+            border:none;
+            }
+            a:hover{
+            font-weight: bold;
+            color:crimson;
+            }
+            #main-nav>a{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px gray;
+            }
             .clear{
                 clear: both;
                 height: 0px;
@@ -79,11 +114,21 @@
             .info dl{
                 margin: 0px;
             }
-         
+            #footer_main{
+                text-align: center;
+                color: white;
+                font-size: 12px;
+                font-weight:normal;
+                background-color: rgb(197, 4, 4);
+                position: relative;
+                width:100%;
+                bottom:0;
+                padding:0px 0px;
+            }
         </style>
     </head>
     <body>
-        <div id="wrap">
+        <div>
             <header>
                 <h1>Gridly</h1>
                 <div class="short_line"></div>
@@ -370,6 +415,10 @@
                 <div>This website & the Internet Ends hereg</div>
                 <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
             </footer>
+            <footer id="footer_main">
+                    <div>Copyright ⓒ rain___young. sources by Kellogg.</div>
+                    <div>Kaywon University of Art & Design. Department of Digital Media Design ONTENT PROGRAMMING FINAL TEST REPORT</div>
+                </footer>
         </div>
     </body>
 </html>

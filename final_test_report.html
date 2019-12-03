@@ -1,19 +1,495 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
     <head>
-    <DIV style="text-align :center;">
-            <a href="index.html">◀ index</a>
-            <a href="middle_test_report.html">middle▶</a>
-            </DIV>
-            
-        <title></title>
+        
+        <title>Kellogg</title>
         <meta charset="utf-8" />
         <!-- utf-8, euc-kr -->
         <meta name="author" content="곽우영" />
         <meta name="keywords" content="계원, 콘텐츠 프로그래밍, 디지털미디어디자인" />
+       
+        <div id="main-nav">
+            <a href="index.html">◀ index</a>
+            <a href="training.html">html 연습 페이지</a>
+            <a href="html5.html">html5 연습 페이지</a>
+            <a href="form.html">멈뭄미 회원가입</a>
+            <a href="layout1.html">layout1</a>
+            <a href="layout2.html">layout2</a>
+            <a href="layout3.html">layout3</a>
+            <a href="middle_test_report.html">middle - The Handmaiden</a>
+            <a href="final_test_report.html">final - Kellogg</a>
+        </div>
+                
+        <style>
+            #main-nav{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px black;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            }
+            #main-nav>a:nth-child(9){
+            border:none;
+            }
+            a:hover{
+            font-weight: bold;
+            color:crimson;
+            }
+            #main-nav>a{
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right : solid 1px gray;
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+            head{
+                background-color: black;
+            }
+            
+            .long_line{
+                border-bottom: solid 1px gray;
+                padding: 0px;
+            }
+            
+            header ul{
+                padding:0px 0px;
+                margin:5px 0px;
+                font-size: 15px;
+                font-weight: bold;
+            
+            }
+            .more{
+                background-color:black;
+                color:white;
+                
+                display: inline-block;
+                font-size:11px;
+                font-weight: bold;
+                padding:2px 2px 3px 1px;
+                position: static;
+                position:absolute;
+
+                bottom: 0px;
+                right:0px;
+            }
+            .visual{
+                position:relative;
+            }
+            .visual img{
+                display: inline;
+                display: block;
+            }
+      
+            .card{
+                background-color: white;
+                border : solid 1px gray;
+                
+                width:300px;
+                float:left;
+                list-style: none;
+                margin: 15px;
+            }
+            #cards{
+                margin-left: 200px;
+            }
+            .info{
+                padding: 20px;
+            }
+            .info dd{
+                margin: 0px;
+                font-size:11px;
+            }
+            .info dt{
+                font-weight: bold;
+            }
+            .info dl{
+                margin: 0px;
+            }
+            #logo{
+                text-align: center;
+                margin: 50px;
+            
+            }
+            #banner{
+                width: 600px;
+                margin:  auto;
+                position: relative;
+                overflow: hidden;
+                padding:0px 0px 12px 0px;
+            }
+            .slide{
+                width: 1800px; position:relative;
+            }
+            .slide>li {
+                width: 600px;
+                float: left;
+                height: 300px;
+                list-style: none;
+            }
+            .slide>li>img {
+                width: 100%;
+                height: 100%;
+            }
+            #back_img{
+                background-image: url("final/로고2x.png");
+                /*height: 400px;*/
+                background-size: cover;
+       
+                background-position: 50% 50%;
+                text-align: center;
+                padding:200px 0px;
+            }
+            header{
+                background-color: white;
+                color:rgb(51, 51, 51);
+                padding: 10px 50px;
+            }
+            header>h1{
+                margin:0px;
+            }
+            header ul{
+                margin:13px 0px;
+                text-align: center;
+            }
+            header>nav li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            .float_left{
+                float:left;
+            }
+            .float_right{
+                float:right;
+            }
+            #footer_main{
+                text-align: center;
+                color: white;
+                font-size: 12px;
+                font-weight:normal;
+                background-color: rgb(197, 4, 4);
+                position: relative;
+                width:100%;
+                bottom:0;
+                padding:0px 0px;
+            }
+            #cereal1{
+                width:300px; height:300px;
+                background-image: url("final/콘푸로스트.png");
+                background-size: 300px;
+            }
+            #cereal1:hover{
+                background-image: url("final/콘푸로스트-1.png");
+                background-size: 300px;
+            }
+            #cereal2{
+                width:300px; height:300px;
+                background-image: url("final/그래놀라.png");
+                background-size: 300px;
+            }
+            #cereal2:hover{
+                background-image: url("final/그래놀라-1.png");
+                background-size: 300px;
+            }
+            #cereal3{
+                width:300px; height:300px;
+                background-image: url("final/아몬드.png");
+                background-size: 300px;
+            }
+            #cereal3:hover{
+                background-image: url("final/아몬드-1.png");
+                background-size: 300px;
+            }
+            #cereal4{
+                width:300px; height:300px;
+                background-image: url("final/스페셜K.png");
+                background-size: 300px;
+            }
+            #cereal4:hover{
+                background-image: url("final/스페셜K-1.png");
+                background-size: 300px;
+            }
+            #cereal5{
+                width:300px; height:300px;
+                background-image: url("final/후르츠.png");
+                background-size: 300px;
+            }
+            #cereal5:hover{
+                background-image: url("final/후르츠-1.png");
+                background-size: 300px;
+            }
+            #cereal6{
+                width:300px; height:300px;
+                background-image: url("final/첵스초코.png");
+                background-size: 300px;
+            }
+            #cereal6:hover{
+                background-image: url("final/첵스초코-1.png");
+                background-size: 300px;
+            }
+            #body_b{
+                background-image: url("final/푸더.jpg");
+                width:98%;
+                height: 400px;
+                margin-left: 10px;
+                margin-right: 10px;
+
+            }
+            body{
+                margin:0px;
+            }
+            h2{
+                background-color: crimson;
+                color:whitesmoke;
+                margin:10px 0px;
+            }
+            #img1{
+                width: 600px;
+            }
+            #story_img{
+                float: left;
+                margin-left:100px;
+                padding:50px 0px;
+            }
+
+            #story dt{
+                font-weight: bold;
+            }
+            #story dd{
+                margin:0px;
+            }
+
+        </style>
+         <script src="http://code.jquery.com/jquery-latest.js"></script>
     </head>
     <body>
+        <div id="wrap">
+            <header>
+                <div class="float_left">
+                <img width="100" src="final/Kellogg_Logo.png"/></div>
+                <nav class="float_right">
+                    <ul>
+                        <li>About us</li>
+                        <li>Product</li>
+                        <li>Recipe</li>
+                        <li>Event</li>
+                        <li>HelpCenter</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+                <div id="back_img"></div>
+            </header>
+            <div class="long_line"></div>
+
+            <h2 style="text-align: center;" >today news!</h2>
+
+            <div id="banner">
+                <ul class="slide">
+                    <li id="b_s">
+                        <img src="final/켈로그-오버1.jpg" alt="slide image" />
+                    </li>
+                    <li id="b_s">
+                        <img src="final/켈로그-오버2.jpg" alt="slide image" />
+                    </li>
+                    <li id="b_s">
+                        <img src="final/켈로그-오버3.png" alt="slide image" />
+                    </li>
+                </ul>
+            </div>
+            <script>
         
+        
+            function slide(){
+                $('.slide').animate({left:-600}, function(){
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({left:-20})
+                })
+            }
+        
+            setInterval(slide, 1800)
+            </script>
+                   <div class="long_line"></div>
+
+       <h2 style="text-align: center;" >kellogg's story</h2>
+            
+       <div id="story">
+           <section>
+               <div id="story_img">
+                   <img id="img1" src="final/영양.jpg" />
+                       <dt>켈로그는 좋은 품질 제품으로 건강한 세상을 만들어나가기 위해 헌신하는 사람들로</dt>
+                       <dt>구성된 기업입니다.</dt>
+                       <dd>사람들의 건강 증진에 도움을 주기 위한 열정이 동기가 되어 켈로그는 자신이 만드는 </dd>
+                       <dd>제품을 통해 사람들의 삶에 긍정적인 변화가 생기도록 최선을 다했습니다.</dd>
+                </div>
+                <div id="story_img">
+                       <img id="img1" src="final/이야기.jpg" />
+                       <dt>하루 식사 중 아침 식사가 가장 중요하다는 사실은 많이 들어보셨을 거에요.</dt>
+                       <dd>통곡물로 만들어진 켈로그 시리얼은 성인뿐 아니라 특히 아이들이 놓칠 수 있는 수많은</dd>
+                       <dd> 하루 필수 섭취 영양소를 제공하여 가족이 활기차게 아침을 시작할 수 있도록 도와 줍니다.</dd>
+                   </div>            
+           </section>
+           <div class="clear"></div>
+           <section>
+                   <div id="story_img">
+                       <img id="img1" src="final/아침식사.jpg" />
+                           <dt>좋은 아침식사가 하루를 결정합니다.</dt>
+                           <dd>영양이 풍부한 아침식사는 신체와 두뇌를 재가동시킬 뿐 아니라 신진대사를 원활하게</dd>
+                           <dd>하고 아침을 시작할 수 있는 에너지를 공급합니다.</dd>
+                    </div>
+                    <div id="story_img">
+                           <img id="img1" src="final/곡물.jpg" />
+                           <dt>곡물은 오랜 세월 동안 건강한 식단의 필수 요소였습니다.</dt>
+                           <dd>곡물은 에너지원인 탄수화물의 보고로 아침을 책임지는 데 필요한 연료를 몸과 두뇌에</dd>
+                           <dd>공급해줍니다.</dd>
+                       </div>            
+               </section>
+               <div class="clear"></div>
+       </div>
+
+       <div class="long_line"></div>
+
+
+            <div id="content">
+                    <h2 style="text-align: center;" >Cereal Best</h2>
+                <ul>
+                    <div id="cards">
+                    <li class="card">
+                        <div class="visual">
+                            <div id="cereal1"></div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>오리지날 콘푸로스트</dt>
+                                <dd>
+                                    <div>Original Frosted Flakes</div>
+                                    <div class="long_line"></div>
+                                    <p>바삭하고 고소한 맛이 살아있는</p>
+                                    <p>켈로그의 오리지날 콘푸로스트</p>
+                                    
+                                    <div class="long_line"></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <div id="cereal2"></div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>그래놀라</dt>
+                                <dd>
+                                    <div>Granola Flakes</div>
+                                    <div class="long_line"></div>
+                                    <p>활기한 하루의 시작을 여는 몸에 좋은</p>
+                                    <p>5가지 곡물과 과일로 맛과 영양을 채운 시리얼</p>
+                                    
+                                    <div class="long_line"></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <div id="cereal3"></div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>아몬드 푸레이크</dt>
+                                <dd>
+                                    <div>Almond Flake</div>
+                                    <div class="long_line"></div>
+                                    <p>바삭한 푸레이크에 고소한 아몬드와 코코넛가루를</p>
+                                    <p>입힌 바삭하고 고소하게 씹히는 시리얼</p>
+                                    
+                                    <div class="long_line"></div>
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </li>  <div class="clear"></div>
+                    <li class="card">
+                        <div class="visual">
+                            <div id="cereal4"></div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>스페셜K</dt>
+                                <dd>
+                                    <div>Special K Flakes</div>
+                                    <div class="long_line"></div>
+                                    <p>쌀로 구워 만든 고소하고 바삭한 시리얼로</p>
+                                    <p>지방 함량은 적으면서 단백질은 풍부하여 체중조절</p>
+                                    
+                                    <div class="long_line"></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                     <li class="card">
+                        <div class="visual">
+                            <div id="cereal5"></div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>후르츠링</dt>
+                                <dd>
+                                    <div>Fruit ring Flakes</div>
+                                    <div class="long_line"></div>
+                                    <p>알록달록한 색의 투간 샘과 상큼한 4가지 색상의</p>
+                                    <p>과일 맛을 골라 먹는 재미가 있는 링 시리얼</p>
+                                    
+                                    <div class="long_line"></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <div id="cereal6"></div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>오곡으로 만든 첵스초코</dt>
+                                <dd>
+                                    <div>Check Choco Flakes</div>
+                                    <div class="long_line"></div>
+                                    <p>옥수수, 쌀, 밀, 귀리, 보리 다섯가지 곡물로 만들어진</p>
+                                    <p>영양 많고 맛있는 초콜릿 맛 시리얼</p>
+                                    
+                                    <div class="long_line"></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li> 
+                    <div class="clear"></div>
+                </div>
+                </ul>
+            </div>
+            <div class="long_line"></div>
+
+            
+
+            <img id="body_b" src="final/푸더.jpg" />
+            <div class="long_line"></div>
+        
+            <footer id="footer_main">
+                <div>Copyright ⓒ rain___young. sources by Kellogg.</div>
+                <div>Kaywon University of Art & Design. Department of Digital Media Design ONTENT PROGRAMMING FINAL TEST REPORT</div>
+            </footer>
+        </div>
     </body>
 </html>

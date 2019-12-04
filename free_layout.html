@@ -122,6 +122,7 @@
                 position: relative;
                 overflow: hidden;
                 padding:0px 0px 12px 0px;
+                text-align: center;
             }
             .slide{
                 width: 1800px; position:relative;
@@ -239,6 +240,7 @@
                 height: 400px;
                 margin-left: 10px;
                 margin-right: 10px;
+                margin-top:0px;
 
             }
             body{
@@ -272,14 +274,14 @@
         <div id="wrap">
             <header>
                 <div class="float_left">
-                <img width="100" src="final/Kellogg_Logo.png"/></div>
+                <img id="top_logo" width="100" src="final/Kellogg_Logo.png"/></div>
                 <nav class="float_right">
                     <ul>
-                        <li>About us</li>
-                        <li>Product</li>
-                        <li>Recipe</li>
-                        <li>Event</li>
-                        <li>HelpCenter</li>
+                        <li><a href="#top_logo">main</a></li>
+                        <li><a href="#news">news</a></li>
+                        <li><a href="#story">story</a></li>
+                        <li><a href="#content">cereal</a></li>
+                        <li><a href="#footer_main">▼</a></li>
                         <div class="clear"></div>
                     </ul>
                 </nav>
@@ -288,7 +290,7 @@
             </header>
             <div class="long_line"></div>
 
-            <h2 style="text-align: center;" >today news!</h2>
+            <h2 id="news" style="text-align: center;" >today news!</h2>
 
             <div id="banner">
                 <ul class="slide">
@@ -301,10 +303,12 @@
                     <li id="b_s">
                         <img src="final/켈로그-오버3.png" alt="slide image" />
                     </li>
+                    
                 </ul>
+                <a id="top_logo" href="#">▲</a>
             </div>
             <script>
-        
+            
         
             function slide(){
                 $('.slide').animate({left:-600}, function(){
@@ -315,11 +319,12 @@
         
             setInterval(slide, 1800)
             </script>
+            
                    <div class="long_line"></div>
-
-       <h2 style="text-align: center;" >kellogg's story</h2>
+      
             
        <div id="story">
+            <h2 style="text-align: center;" >kellogg's story</h2>
            <section>
                <div id="story_img">
                    <img id="img1" src="final/영양.jpg" />
@@ -351,6 +356,9 @@
                        </div>            
                </section>
                <div class="clear"></div>
+               <div style="text-align: center;">
+                    <a id="top_logo" href="#">▲</a>
+                </div>
        </div>
 
        <div class="long_line"></div>
@@ -478,14 +486,15 @@
                     <div class="clear"></div>
                 </div>
                 </ul>
+                <div style="text-align: center;">
+                <a id="top_logo" href="#">▲</a>
+            </div>
             </div>
             <div class="long_line"></div>
 
             
 
             <img id="body_b" src="final/푸더.jpg" />
-            <div class="long_line"></div>
-        
             <footer id="footer_main">
                 <div>Copyright ⓒ rain___young. sources by Kellogg.</div>
                 <div>Kaywon University of Art & Design. Department of Digital Media Design ONTENT PROGRAMMING FINAL TEST REPORT</div>
